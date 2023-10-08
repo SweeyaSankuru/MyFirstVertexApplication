@@ -7,7 +7,7 @@ public class FirstVerticle extends AbstractVerticle {
     @Override
     public void start(Future<Void> startFuture) throws Exception {
         vertx.createHttpServer()
-                .requestHandler(req -> req.response().end("Hello, World! "+add(3,5)+combine("hey","Man")))
+                .requestHandler(req -> req.response().end("Hello, World! "+add(3,5)+combine(" hey",", Man")))
                 .listen(8080);
     }
     public int add(int numberA, int numberB){
