@@ -23,4 +23,11 @@ public class FirstVerticleTest {
         FirstVerticle test = new FirstVerticle();
         assertEquals(10,test.add(3,7));
     }
+
+    @Test
+
+    public void combineTest(){
+        FirstVerticle test = new FirstVerticle();
+        assertEquals("heyMan",test.combine("hey","Man"));
+    }
 }

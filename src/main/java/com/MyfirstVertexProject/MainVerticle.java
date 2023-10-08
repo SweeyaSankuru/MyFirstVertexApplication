@@ -1,9 +1,10 @@
 package com.MyfirstVertexProject;
 
 import com.MyfirstVertexProjectVerticle.FirstVerticle;
+import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
 
-public class MainVerticle {
+public class MainVerticle extends AbstractVerticle {
     public static void main(String[] args) {
 
         Vertx vertx = Vertx.factory.vertx();
